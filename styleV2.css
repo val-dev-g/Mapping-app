@@ -1,0 +1,549 @@
+boby html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  /* padding: 0; */
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+span.navbar-text {
+  font-size: 22px !important;
+  color: #fff !important;
+}
+
+/* Hide widgets open by default (JS) */
+.hidden {
+  display: none;
+}
+
+main
+ {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /* overflow: auto; */
+}
+
+.row {
+  background-color: white;
+}
+/* ---------------------- Header --------------------------------- */
+header {
+  display: block;
+  height: auto;
+  min-width: 80px;
+  text-align: center;
+  color: #fff;
+  /* text-shadow: #000 0 0 .2em; */
+  font-size: 12px;
+  border-bottom: 1.5px solid #69c8a9;
+}
+
+nav img {
+  width: 45px;
+  height: 45px;
+}
+
+#navcontrol{
+  padding-left: 40px
+}
+
+.navbar-text{
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+.bg-light {
+  background-color: #187797!important;
+}
+/* Logo */
+#logoimg{
+  margin-left: -10px !important;
+}
+
+logocontainer{
+  margin-left: 25px !important;
+}
+
+/* --------------SidePanel left-------------------- */
+#btnsidepanel.active {
+  left:0px;
+}
+
+#btnbottom{
+  bottom: 0;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+/* ------------- Measurement widget ----------------- */
+#topbar {
+  background: #fff;
+  padding: 10px;
+}
+
+.action-button {
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #d3d3d3;
+  color: #6e6e6e;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:hover,
+.action-button:focus {
+  /* background: #0079c1; */
+  color: #e4e4e4;
+}
+
+.active {
+  color: #e4e4e4;
+}
+
+/* ----------Footer padding ---------------------*/
+.clear {
+  clear: both;
+}
+
+.footer {
+  height: 100%;
+  z-index: 1;
+}
+
+/* ----------- Widget Panel ----------------- */
+  #widgetPanelDiv{
+    background-color: white;
+    height: 520px;
+    padding: 0 ;
+    overflow-y: scroll;
+}
+
+/* --------- Style test --------- */
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 17px !important;
+}
+/* ------- SIDEBAR STYLE ------------ */
+.col-md-2 {
+  /* height: auto; */
+  background: #187797;
+  color: #fff;
+  transition: all 0.5s;
+  font-size: 17px !important;
+  padding: 0;
+}
+
+/* -----------Mise en page----------- */
+.col-md-2 ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #69c8a9;
+}
+
+.col-md-2 ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+.col-md-2 ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+/* -------------Line---------------- */
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+
+/* ---------Button contact----------------*/
+a.article,
+a.article:hover {
+  background: #1f6a83 !important;
+  color: #fff !important;
+  background: #fff;
+  color: #7386D5;
+}
+
+/* ----------Dropdown color---------------- */
+.col-md-2 ul li.active>a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #1f6a83;
+}
+
+.dropdown-toggle  {
+  background: #187797;
+}
+
+ /* -------Toggle widget position---------- */
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.col-10{
+  padding: 0;
+}
+
+.col-12{
+  padding: 0;
+}
+
+a img { 
+  border: none; 
+}
+
+i{
+  color: #69c8a9;
+  font-size: 22px;
+}
+
+.btnmenu{
+  margin-right: 5px;
+}
+
+.col-8{
+  padding: 0;
+}
+
+/* .container-navbar-logo{
+  background-color: #fffdfd;
+  border-radius: 5px;
+  border: 1px solid #F18A02;
+  width: 120px;
+} */
+
+#buttonsidebar:hover {
+  color: rgb(255, 230, 0); 
+}
+
+/* ----------Responsive--------- */
+@media (max-width:700px ) {
+
+#header {
+    width: 100%;
+  }
+
+#logocontainer {
+    display: none !important;
+  } 
+
+#textheader{
+  display: none !important;
+}  
+
+#navcontrol {
+ justify-content: start !important;
+
+}
+
+#mapcolumn{
+   padding: 0px !important;
+}
+
+#navcontrol{
+  justify-content: end;
+}
+
+.esri-scale-bar__bar-container {
+  bottom: 40px;
+}
+#buttonLegend{
+  top: 215px !important;
+}
+
+}
+
+#btnsidebar{
+  font-size: 12px;
+}
+
+#contact-a, #about-a {
+  padding: 4px !important;
+  border-radius: 3px;
+  border-color: #69c8a9 !important;
+  border: 0.3px solid;
+}
+
+#coordinateClose{
+  float: right;
+  position: relative;
+  font-size: 15px;
+  color: rgb(77, 77, 77);
+}
+
+#measureClose{
+  left: 80px;
+  top:-21px;
+  position: relative;
+  font-size: 15px;
+  color: rgb(77, 77, 77);
+}
+
+#galleryClose{
+  /* left: 190px; */
+  float: right;
+  position: relative;
+  font-size: 15px;
+  color: rgb(77, 77, 77);
+}
+
+#basicEditorClose{
+  left: 286px;
+  position: relative;
+  font-size: 15px;
+  color: rgb(77, 77, 77);
+}
+
+.fa-times:hover{
+ color: rgb(175, 175, 175);
+}
+
+.esri-basemap-gallery__item:first-child {
+  margin-top: 15px;
+}
+
+#mapcolumn{
+  padding: 0;
+}
+
+ /* ----- Button rertun top --------- */
+#btnarrow {
+  position: fixed; 
+  width: 20px; 
+  height: 25px; 
+  bottom: 105px; 
+  right: 35px; 
+  border: none;
+  background: none;
+}
+
+.fa-arrow-alt-circle-up:before{
+  color: rgb(255, 0, 0);
+  font-size: 28px;
+  border: #fff;
+}
+/* -------- Get coordinate design -------- */
+#coordsWidget{
+  border: none;
+  background: none;
+  box-shadow: none;
+  color: #000;
+  font-weight: bold;
+}
+/* ------------ Time slider ------------- */
+#timeSlider {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  bottom: 20px;
+}
+
+#titleDiv {
+  padding: 10px;
+  font-weight: 36;
+  text-align: center;
+}
+
+/* -----------------------  */
+
+#titleDiv,
+#infoDiv {
+  padding: 10px;
+  width: 320px;
+}
+
+#infoDiv {
+  height: 425px;
+  font-size: 14px;
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#titleText {
+  font-size: 20pt;
+  font-weight: 30;
+  padding-bottom: 10px;
+}
+.chart-legend li span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#sidebar{
+  overflow-y: scroll;
+  height: 520px;
+}
+
+#sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+#borderLi{
+  border-bottom: 0.2px solid #69c8a9;
+}
+
+/* Dead animal */
+#formDiv {
+  width: 100%;
+}
+
+.esri-item-list__scroller {
+  overflow-y: visible;
+}
+
+.editArea-container {
+  background: #fff;
+  line-height: 1.5em;
+  overflow: auto;
+  padding: 12px 15px;
+  width: 300px;
+}
+
+.list-heading {
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #323232;
+}
+
+.or-wrap {
+  background-color: #e0e0e0;
+  height: 1px;
+  margin: 2em 0;
+  overflow: visible;
+}
+
+.or-text {
+  background: #fff;
+  line-height: 0;
+  padding: 0 1em;
+  position: relative;
+  bottom: 0.75em;
+}
+
+/* override default styles */
+.esri-feature-form {
+  background: #fff;
+}
+
+.esri-feature-templates {
+  width: 256px;
+}
+
+.esri-feature-templates__section-header {
+  display: none;
+}
+
+.esri-feature-templates__section {
+  box-shadow: none;
+}
+
+.esri-feature-templates__scroller {
+  max-height: 200px;
+}
+
+/* Feature table */
+
+/* html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#viewDiv {
+  height: 50%;
+  width: 100%;
+} */
+
+#zoom {
+  margin-bottom: 5px;
+}
+
+#actions {
+  padding: 5px;
+}
+
+.container {
+  height: 50%;
+  width: 100%;
+}
+
+/* Button widget */
+
+#buttonLegend{
+  font-size: 14px;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  box-shadow: 1px 1px 1px #b8b8b8;
+}
+.fa-map-signs{
+  color: #6e6e6e;
+}
+
+#buttonLegend:hover{
+  background-color: rgb(238, 238, 238);
+}
+
+.fa-times{
+  color: #323232;
+}
