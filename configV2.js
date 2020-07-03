@@ -51,7 +51,7 @@ require(["dojo/ready"], function (ready) {
 
         });
       
-        console.clear()
+        // console.clear()
 
         // get ui elements references 
 
@@ -127,7 +127,7 @@ require(["dojo/ready"], function (ready) {
         })
 
         var closeAllWidgets = function () {
-          console.log("close all widgets")
+          // console.log("close all widgets")
           state.animalsShown = false;
           state.galleryShown = false;
           state.animalsShown = false;
@@ -141,8 +141,8 @@ require(["dojo/ready"], function (ready) {
 
         var updateUi = function () {
 
-          console.log("update Ui")
-          console.log("state in update ui", state)
+          // console.log("update Ui")
+          // console.log("state in update ui", state)
 
           WidgetDiv.className = ""
           var newGalleryClass = state.getWidgetsPanelClass()
@@ -164,8 +164,8 @@ require(["dojo/ready"], function (ready) {
 
           editorContainer.className = ""
           var newEditorClass = state.getEditorContainerClass()
-          console.log("newEditorClass", newEditorClass)
-          console.log("editorContainer", editorContainer)
+          // console.log("newEditorClass", newEditorClass)
+          // console.log("editorContainer", editorContainer)
           newEditorClass.forEach(function (el) {
             editorContainer.classList.add(el);
           })
@@ -178,8 +178,8 @@ require(["dojo/ready"], function (ready) {
 
           galleryContainer.className = ""
           var newGalleryClass = state.getGalleryContainerClass()
-          console.log("galleryContainer", galleryContainer)
-          console.log("newGalleryClasses", newGalleryClass)
+          // console.log("galleryContainer", galleryContainer)
+          // console.log("newGalleryClasses", newGalleryClass)
           newGalleryClass.forEach(function (el) {
             console.log(el)
             galleryContainer.classList.add(el)
