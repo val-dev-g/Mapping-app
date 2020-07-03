@@ -123,7 +123,7 @@ logocontainer{
 /* ----------- Widget Panel ----------------- */
   #widgetPanelDiv{
     background-color: white;
-    height: 520px;
+    height: 90vh;
     padding: 0 ;
     overflow-y: scroll;
 }
@@ -417,7 +417,7 @@ ul {
 
 #sidebar{
   overflow-y: scroll;
-  height: 520px;
+  height: 90vh;
 }
 
 #sidebar::-webkit-scrollbar {
