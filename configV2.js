@@ -50,10 +50,6 @@ require(["dojo/ready"], function (ready) {
         let map = new Map({
 
         });
-      
-        // console.clear()
-
-        // get ui elements references 
 
         var WidgetDiv = document.getElementById("widgetPanelDiv");
         var viewDiv = document.getElementById("ViewDiv");
@@ -66,8 +62,6 @@ require(["dojo/ready"], function (ready) {
 
         btnsidebar.addEventListener("click", function () {
 
-          // console.log("state beeing used", state)
-
           state.sidebaropen = !state.sidebaropen,
             state.widgetsPanelOpen = state.widgetsPanelOpen,
 
@@ -79,17 +73,10 @@ require(["dojo/ready"], function (ready) {
           scale: 123456789,
           container: viewDiv,
           map: map,
-          // italy
-          // zoom: 5,
-          // center: [12, 43], // longitude, latitude
-          // usa
           center: [-117.18, 34.06],
           zoom: 15
         });
 
-        // var animalExpand = DeadAnimal.createExpand(view)
-        // DeadAnimal.addExpand(view)
-        //add featreLayer to the map. Not the viewMap
         DeadAnimal.addFeatureLayer(map)
         DeadAnimal.addFeatureForm(view)
         DeadAnimal.selectExistingFeature(view)
@@ -127,7 +114,6 @@ require(["dojo/ready"], function (ready) {
         })
 
         var closeAllWidgets = function () {
-          // console.log("close all widgets")
           state.animalsShown = false;
           state.galleryShown = false;
           state.animalsShown = false;
@@ -137,12 +123,7 @@ require(["dojo/ready"], function (ready) {
         var closeWidgetsPanelButton = document.getElementById("galleryClose");
         closeWidgetsPanelButton.addEventListener("click", closeAllWidgets)
 
-        // update Ui classes
-
         var updateUi = function () {
-
-          // console.log("update Ui")
-          // console.log("state in update ui", state)
 
           WidgetDiv.className = ""
           var newGalleryClass = state.getWidgetsPanelClass()
@@ -164,8 +145,6 @@ require(["dojo/ready"], function (ready) {
 
           editorContainer.className = ""
           var newEditorClass = state.getEditorContainerClass()
-          // console.log("newEditorClass", newEditorClass)
-          // console.log("editorContainer", editorContainer)
           newEditorClass.forEach(function (el) {
             editorContainer.classList.add(el);
           })
@@ -178,13 +157,10 @@ require(["dojo/ready"], function (ready) {
 
           galleryContainer.className = ""
           var newGalleryClass = state.getGalleryContainerClass()
-          // console.log("galleryContainer", galleryContainer)
-          // console.log("newGalleryClasses", newGalleryClass)
           newGalleryClass.forEach(function (el) {
             console.log(el)
             galleryContainer.classList.add(el)
           })
-
         }
 
         // ------------------ Basic Editor & panel--------------------------
@@ -212,9 +188,9 @@ require(["dojo/ready"], function (ready) {
                   state.editorShown = false
                   state.widgetsPanelOpen = false
                 } else { 
-                  state.editorShown = (widgetName == "editor") // ouvre l'éditor
-                  state.galleryShown = (widgetName == "gallery") // cache
-                  state.animalsShown = (widgetName == "animals") // cache
+                  state.editorShown = (widgetName == "editor")
+                  state.galleryShown = (widgetName == "gallery") 
+                  state.animalsShown = (widgetName == "animals") 
                   state.widgetsPanelOpen = true
                 }
                 break; 
@@ -297,11 +273,8 @@ require(["dojo/ready"], function (ready) {
         view.ui.add(coordinateDiv, "top-right");
 
         //-------------- Bookmarks  ---------------------------------
-
         const bookmarks = new Bookmarks({
           view: view,
-          // container: BookmarksDiv,
-          // allows bookmarks to be added, edited, or deleted
           editingEnabled: true
         });
 
@@ -418,7 +391,5 @@ require(["dojo/ready"], function (ready) {
           showCoordinates(view.toMap({ x: evt.x, y: evt.y }));
         });
       })
-
   )
-
 })
