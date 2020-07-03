@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Theme Bootstrap online -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Themes ARCGIS online-->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/themes/calcite/dijit/calcite.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/themes/calcite/esri/esri.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/css/esri.css">
+  <!-- Theme ARCGIS in the code -->
+  <!-- <script src="arcgis.js"></script> -->
+  <script src="https://js.arcgis.com/4.15/"></script>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/b46699528a.js" crossorigin="anonymous"></script>
+  <!-- File JS & CSS -->
+  <!-- <script src="state.js"></script> -->
+  <script src="configV2.js"></script>
+  <link rel="stylesheet" href="styleV2.css">
+  <!-- Logo in the tab -->
+  <link rel="shortcut icon" href="./img/layers_map_layer-512.png">
+  <title>geo Mapping</title>
+</head>
+
+
+<body>
+  <!-- Topbar -->
+  <header>
+    <div>
+      <nav id="navcontrol" class="navbar navbar-light bg-light justify-content-between">
+        <div class="container-navbar-logo" id="logocontainer">
+          <a class="navbar-brand" href="#"></a>
+          <img id="logoimg" src="/img/layers_map_layer-512.png" width="30" class="d-inline-block align-top" alt="">
+        </div>
+        <span class="navbar-text m-auto" id="textheader">
+          Geo Mapping
+        </span>
+
+        <!-- Button menu -->
+        <button id="sidebarCollapse" type="button" class="btn" data-toggle="collapse" data-target="#sidebar">
+          <i class="fas fa-align-right" id="buttonsidebar"></i>
+        </button>
+
+        <!-- Searchbar -->
+        <div type="button" id="SearchDiv">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- <div class="col-12" id="fullscreen"> -->
+  <div class="container-fluid" id="element">
+    <!-- sidebar left -->
+    <div class="row">
+      <div class="col-6 col-md-2 collapse" id="sidebar">
+        <div>
+          <ul class="components">
+            <!-- dropdown INOP Tools -->
+            <li class="active" id="borderLi">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Basic widgets</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                  <a href="#" id="viewGalleryLink">Gallery</a>
+                </li>
+                <li>
+                  <a href="#" id="viewCoordinateLink">Coordinate conversion</a>
+                </li>
+                <li>
+                  <a href="#" id="MeasurmentLink">Measurement</a>
+                </li>
+              </ul>
+            </li>
+            <!-- dropdown NAVAL Tools-->
+            <!-- <li class="active" id="borderLi">
+              <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">NAVAL
+                Tools</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu1">
+                <li>
+                  <a href="#">Option 1</a>
+                </li>
+                <li>
+                  <a href="#">Option 2</a>
+                </li>
+                <li>
+                  <a href="#">...</a>
+                </li>
+              </ul>
+            </li> -->
+            <!-- dropdown MARINE Tools-->
+            <!-- <li class="active" id="borderLi">
+              <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MARINE
+                Tools</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu2">
+                <li>
+                  <a href="#">Option 1</a>
+                </li>
+                <li>
+                  <a href="#">Option 2</a>
+                </li>
+                <li>
+                  <a href="#">...</a>
+                </li>
+              </ul>
+            </li> -->
+            <!-- dropdown HSE Tools-->
+            <li class="active">
+              <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Others</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu3">
+                <li>
+                  <a href="#" id="viewBasicEditor">Basic Editor</a>
+                </li>
+                <!-- <li>
+                    <a href="#" id="viewLayerList">...</a>
+                  </li> -->
+                <li>
+                  <a href="#" id="viewFeatureTemplate">Feature template</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- contact -->
+        <ul class="list-unstyled CTAs d-flex justify-content-around" id="btnsidebar">
+          <li>
+            <a href="mailto:jajora78@gmail.com" class="article" id="contact-a">Contact</a>
+          </li>
+         <!-- <li>
+            <a href="" class="article" id="about-a">About</a>
+          </li>  -->
+        </ul>
+      </div>
+
+      <!-- Widget panel Div -->
+      <div class="col-6 col-md-2 hidden" id="widgetPanelDiv">
+        <span style="cursor: pointer;" id="galleryClose">
+          <i class="fas fa-times"></i>
+        </span>
+        <div id="EditorDiv" class="hidden"></div>
+        <div id="GalleryDiv" class="hidden"></div>
+        <div id="AnimalsDiv" class="hidden">
+          <div id="editArea" class="editArea-container esri-widget--panel">
+            <div id="addFeatureDiv" style="display:block;">
+              <h3 class="list-heading">Report Incidents</h3>
+              <ul style="font-size: 13px; padding-left: 1.5em;">
+                <li>Select template from the list</li>
+                <li>Click on the map to create a new feature</li>
+                <li>Update associated attribute data</li>
+                <li>Click <i>Update Incident Info</i></li>
+              </ul>
+              <div id="addTemplatesDiv" style="background:#fff;"></div>
+            </div>
+    
+            <div id="featureUpdateDiv" style="display:none; margin-top: 1em;">
+              <h3 class="list-heading">Enter the incident information</h3>
+              <div id="attributeArea">
+                <div id="formDiv"></div>
+                <input type="button" class="esri-button" value="Update incident info" id="btnUpdate" />
+              </div>
+              <br />
+              <div id="deleteArea">
+                <input type="button" class="esri-button" value="Delete incident" id="btnDelete" />
+              </div>
+            </div>
+    
+            <div id="updateInstructionDiv" style="text-align:center; display:block">
+              <p class="or-wrap"><span class="or-text">Or</span></p>
+              <p id="selectHeader">Select an incident to edit or delete.</p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div id="mapcolumn" class="col-md-12 col-12 h-100">
+        <div id="ViewDiv" style="height: 90vh;">
+          <button id="btnarrow">
+            <a class="far fa-arrow-alt-circle-up  d-md-none" href="#navcontrol"></a>
+          </button>
+        </div>
+      </div>
+
+      <!-- ----------- -->
+      <div id="topbar" class="hidden">
+        <div>
+          <i class="fas fa-times" id="measureClose"></i>
+          <button class="action-button esri-icon-measure-line" id="distanceButton" type="button"
+            title="Measure distance between two or more points">
+          </button>
+          <button class="action-button esri-icon-measure-area" id="areaButton" type="button" title="Measure area">
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <main>
+      <!-- featureTemplate (deadanimal) -->
+
+      <!-- Feature Table  -->
+      <!-- 
+        <div class="container">
+          <div id="tableDiv"></div>
+        </div>
+        <div id="actions" class="esri-widget">
+          <button class="esri-button" id="zoom">Zoom to selected feature</button>
+          <button class="esri-button" id="fullextent">Full extent</button>
+        </div> -->
+
+      <!-- Container widgets in the map -->
+
+      <div id="CoordinateDiv" class="hidden">
+        <i class="fas fa-times" id="coordinateClose"></i>
+      </div>
+      <div id="BookmarksDiv" class="hidden"></div>
+
+      <div id="HomeDiv"></div>
+      <div id="MeasureDiv"></div>
+      <div id="LegendDiv"></div>
+      <div id="LayerListDiv"></div>
+      <div id="TemplateDiv" class="hidden"></div>
+
+    </main>
+
+    <!-- Footer  -->
+    <div class="row">
+      <div class="col-12">
+
+        <footer>
+          <div class="copyright text-center" align="center">
+         
+              <script>
+                document.write('&copy;' );
+                document.write(new Date().getFullYear());
+                document.write(' www.geomapping.fr - All Rights Reserved.');          
+              </script>
+            </div>
+  <!-- <div class="clear"></div> -->
+</body>
+
+</html>
