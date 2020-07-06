@@ -8,7 +8,8 @@ ESRI propose aussi diverses API permettant d’interfacer les données GIS avec 
 Dans le cadre de ce projet, seule l’API d’ArcGIS for JS a été utilisée version 4.15. Cette dernière propose des widgets codés en DOJO, pour l’utiliser dans un environnement JAVASCRIPT.
 Cette API a la particularité de faire appel à une librairie sous DOJO, dans laquelle ESRI stocke un grand nombre de fonctionnalités.
 
-L'application affiche une carte avec les widgets de bases, une sidebar, une navbar et le tout de manière responsive.
+L'application affiche une carte avec les widgets suivants : géocodeur, gallerie de cartes, échelle, barre de recherche d'adresse, bookmark et bien d'autres...
+Le tout de manière responsive.
 
 ---
 *https://developers.arcgis.com/javascript/*
