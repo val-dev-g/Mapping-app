@@ -9,7 +9,7 @@ Dans le cadre de ce projet, seule l’API d’ArcGIS for JS a été utilisée ve
 Cette API a la particularité de faire appel à une librairie sous DOJO, dans laquelle ESRI stocke un grand nombre de fonctionnalités.
 
 L'application affiche une carte avec les widgets suivants : géocodeur, gallerie de cartes, échelle, barre de recherche d'adresse, bookmark et bien d'autres...
-Le tout de manière responsive.
+Le tout en responsive.
 
 ---
 *https://developers.arcgis.com/javascript/*
