@@ -12,3 +12,4 @@ L'application affiche une carte avec les widgets de bases, une sidebar, une navb
 
 ---
 *https://developers.arcgis.com/javascript/*
+*https://developers.arcgis.com/javascript/latest/api-reference/*
