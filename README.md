@@ -1,4 +1,4 @@
-**Application cartographique utilisant l'API d'ArcGIS for JS.**
+**Application cartographique utilisant l'API d'ArcGIS for JS**
 ==
 
 Cette application est une copie anonimisée d'une mission en entreprise.
@@ -11,7 +11,10 @@ Cette API a la particularité de faire appel à une librairie sous DOJO, dans la
 L'application affiche une carte avec les widgets suivants : géocodeur, gallerie de cartes, échelle, barre de recherche d'adresse, bookmark et bien d'autres...
 Le tout en responsive.
 
+lien de l'application : https://val-dev-g.github.io/Mapping-app/#
 ---
+Documentation :
+
 *https://developers.arcgis.com/javascript/*
 
 *https://developers.arcgis.com/javascript/latest/api-reference/*
