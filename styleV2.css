@@ -244,13 +244,6 @@ i{
   padding: 0;
 }
 
-/* .container-navbar-logo{
-  background-color: #fffdfd;
-  border-radius: 5px;
-  border: 1px solid #F18A02;
-  width: 120px;
-} */
-
 #buttonsidebar:hover {
   color: rgb(255, 230, 0); 
 }
@@ -488,21 +481,6 @@ ul {
   max-height: 200px;
 }
 
-/* Feature table */
-
-/* html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#viewDiv {
-  height: 50%;
-  width: 100%;
-} */
-
 #zoom {
   margin-bottom: 5px;
 }
@@ -532,7 +510,6 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-
   border: none;
   box-shadow: 1px 1px 1px #b8b8b8;
 }

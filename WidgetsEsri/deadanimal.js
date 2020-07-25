@@ -25,21 +25,6 @@ define(null, [
     map.add(featureLayer);
   }
 
-  // const map = new Map({
-  //   basemap: "dark-gray",
-  //   layers: [featureLayer]
-  // });
-
-  // const view = new MapView({
-  //   container: "viewDiv",
-  //   map: map,
-  //   center: [-117.18, 34.06],
-  //   zoom: 15
-  // });
-
-  // New FeatureForm and set its layer to 'Incidents' FeatureLayer.
-  // FeatureForm displays attributes of fields specified in fieldConfig.
-  //var WidgetDiv = document.getElementById("widgetPanelDiv")
   function addFeatureForm(view){
 console.log("featureTemplate")
     const featureForm = new FeatureForm({
@@ -163,16 +148,7 @@ console.log("featureTemplate")
           toggleEditingDivs("block", "none");
         }
       })
-      // .catch(function (error) {
-      //   console.log("===============================================");
-      //   console.error(
-      //     "[ applyEdits ] FAILURE: ",
-      //     error.code,
-      //     error.name,
-      //     error.message
-      //   );
-      //   console.log("error = ", error);
-      // });
+
   }
 
   // Check if a user clicked on an incident feature.
@@ -230,26 +206,6 @@ console.log("featureTemplate")
         }
       });
   }
-  //var WidgetDiv = document.getElementById("widgetPanelDiv")
-  // Expand widget for the editArea div.
-  // var createExpand = function(view){
-  //   const editExpand = new Expand({
-  //     // expandIconClass: "esri-icon-edit",
-  //     // expandTooltip: "Feature Template",
-  //     // expanded: false,
-  //     view: view,
-  //     container: WidgetDiv,
-  //     content: document.getElementById("editArea")
-  //    });
-  //     return editExpand
-  // }
-  // var addExpand = function (view, editExpand) {
-
-  //   // view.ui.add(editExpand, "top-right");
-  // };
-  // var removeExpand = function(view, editExpand){
-  //   // view.ui.remove(editExpand);
-  // }
 
   // input boxes for the attribute editing
   const addFeatureDiv = document.getElementById("addFeatureDiv");
